@@ -219,14 +219,14 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 0 4rem;
+  padding: 0 2rem;
   background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  transform: translateY(100%);
+  transform: translateY(150%);
   transition: 0.5s ease;
 }
 .portfolio-layer h4 {
@@ -234,11 +234,15 @@ section {
   line-height: 3rem;
 }
 .portfolio-layer p {
-  margin: 0.3rem 0 1rem;
+  margin: 0.6rem 0 1rem;
   font-size: 1.6rem;
   line-height: 1.6;
 }
-.portfolio-layer a {
+.portfolio-layer p .link-api {
+  color: #fff;
+  text-decoration: underline;
+}
+.portfolio-layer-link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -247,7 +251,7 @@ section {
   background: #fff;
   border-radius: 50%;
 }
-.portfolio-layer a i {
+.portfolio-layer-link i {
   font-size: 2rem;
   color: #323946;
 }
