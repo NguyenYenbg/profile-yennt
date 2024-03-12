@@ -5,10 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Codehal</title>
+  <title>Yen N.</title>
 
   <!-- box icons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" href="./images/favicon.png" type="image/icon type">
 
   <!-- custom css -->
   <link rel="stylesheet" type="text/css" href="./scss/reset.css">
@@ -112,9 +113,7 @@
         <img src="./images/portfolio2.jpg" alt="">
         <div class="portfolio-layer">
           <h4>Landing Page</h4>
-          <p>The structure of the files is separate and clear, the website moves smoothly
-            with many beautiful effects, correct ratio designed with PerfectPixel
-            Extension.</p>
+          <p>The file structure is clearly separated, the website moves smoothly with many beautiful effects, and the ratio is accurate to each pixel.</p>
           <a class="portfolio-layer-link" target="_blank" href="https://hiver-lab-landing-page.vercel.app/"><i class="bx bx-link-external"></i></a>
         </div>
       </div>
@@ -148,16 +147,16 @@
   <!-- contact section design -->
   <section id="contact" class="contact">
     <h2 class="heading-title">Contact <span>Me</span></h2>
-    <form action="#">
+    <form action="https://formspree.io/f/mkndzpqb" method="POST" onsubmit="return validateForm()">
       <div class="input-box">
-        <input type="text" placeholder="Full name">
-        <input type="email" placeholder="Email address">
+        <input type="text" id="fullName" name="fullName" placeholder="Full name">
+        <input type="text" id="address" name="address" placeholder="Address">
       </div>
       <div class="input-box">
-        <input type="number" placeholder="Mobile number">
-        <input type="text" placeholder="Email Subject">
+        <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Phone number">
+        <input type="email" id="email" name="email" placeholder="Email">
       </div>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+      <textarea id="message" cols="30" rows="10" name="message" placeholder="Your message"></textarea>
       <input type="submit" value="Send Message" class="btn">
     </form>
   </section>
@@ -165,7 +164,7 @@
   <!-- footer design -->
   <footer class="footer">
     <div class="footer-text">
-      <p>Copyright &copy; 2023 by Yennt | All Right Reversed</p>
+      <p>Copyright &copy; 2023 by YenNT | All Right Reversed</p>
     </div>
     <div class="footer-iconTop">
       <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>

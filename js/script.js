@@ -57,3 +57,36 @@ const typed = new Typed('.multiple-text', {
   backDelay: 1000,
   loop: true,
 });
+
+
+/*==================== validate form ====================*/
+function validateForm() {
+  var fullName = document.getElementById("fullName").value;
+  var address = document.getElementById("address").value;
+  var mobileNumber = document.getElementById("mobileNumber").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  var mobileRegex = /^\d+$/;
+
+  if (fullName.trim() === '' || address.trim() === '' || mobileNumber.trim() === '' || email.trim() === '') {
+    alert("Please enter complete information in the fields!");
+    return false;
+  }
+  if (!mobileNumber.match(mobileRegex)) {
+    alert("Please enter a valid phone number!");
+    return false;
+  }
+  if (!email.match(emailRegex)) {
+    alert("Please enter a valid email address!");
+    return false;
+  }
+
+  document.getElementById("fullName").value = '';
+  document.getElementById("address").value = '';
+  document.getElementById("mobileNumber").value = '';
+  document.getElementById("email").value = '';
+  document.getElementById("message").value = '';
+  return true;
+}
